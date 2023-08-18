@@ -47,22 +47,3 @@ film_directory_df = pd.DataFrame(film_directory_list, columns=['Title'])
 film_directory_df['Director'] = film_directory_df['Title'].str.split('/').str[1].str.strip()
 film_directory_df['Year'] = film_directory_df['Title'].str.split('(').str[1].str.split(')').str[0]
 film_directory_df['Title'] = film_directory_df['Title'].str.split('(').str[0].str.strip()
-
-
-# In[21]:
-
-
-film_directory_df
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
